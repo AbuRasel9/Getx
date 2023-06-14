@@ -41,6 +41,10 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void _incrementCounter() {
     _counter++;
+    //when counter increment than show message
+    Get.snackbar(
+        snackPosition:SnackPosition.BOTTOM,
+        "Increment", "Increment Successfull");
   }
 
   @override
